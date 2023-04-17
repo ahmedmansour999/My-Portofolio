@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/img/218148449.jpg);
+}
+
+.nav {
+    background-color: #33333383;
+    opacity: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.hometxt{
+  color: greenyellow !important;
+}
+
+.list li {
+    margin: 0 10px;
+    padding-top: 8px;
+
+}
+
+.list li img {
+    cursor: pointer;
+    
+}
+
+.list li img {
+    height: 40px;
+    width: auto;
+    transform: scale(2);
+    position: absolute;
+    border-radius: 50%;
+    transition: .3s;
+}
+.list li img:hover{
+    scale: 2.1;
+    transform: translate(2px);
+}
+
+.list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-size: x-large;
+}
+
+.list li:hover a{
+    color: #f3db06;
+    text-shadow: 1px 1px 6px #FFEB3B;
+    font-size: 20px;
+}
+.container1{
+    margin-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-direction: row-reverse;
+}
+
+
+.proto .container1 .img {
+    position: relative;
+    box-shadow: 0px -1px 20px 0px rgb(233, 236, 239);
+    width: fit-content;
+}
+
+.proto .container1 .img img {
+    filter: brightness(101%);
+    opacity: 81%;
+    width: 100%;
+}
+
+.proto .container1 .img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    pointer-events: none; 
+}
+.details p{
+    font-weight: bold;
+    color: wheat;
+    font-size: 35px;
+    font-family: emoji;
+}
+.name{
+    font-size: 45px;
+    background-image: linear-gradient(to right, #c5aeae7d, #ededdb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.proto .container1 .details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 21px;
+}
+.proto .container1 .details button i{
+    padding-left: 5px;
+}
+.proto .container1 .details button:hover{
+    background-color: #f3db06;
+    box-shadow: 1px 1px 20px 14px yellow;
+}
+
+
+
+
+#overlay{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    top: 50%;
+    z-index: 2; 
+    transition: opacity 0.5s ease;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: yellow;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: yellow;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: yellow;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: yellow;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
+
+
+
+body.overlay-active > *:not(#overlay) {
+  opacity: 0.3; /* reduce the opacity of other content */
+  pointer-events: none; /* disable pointer events on other content */
+}
+
+
+
+
