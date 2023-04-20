@@ -6,7 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(/img/218148449.jpg);
+     /* we need to tack step back from file css to file img so we need add ../ */
+     background-image: url(../img/218148449.jpg);
 }
 button {
     position: relative;
