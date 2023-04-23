@@ -10,6 +10,32 @@ body {
   background-image: url(../img/218148449.jpg);
 }
 
+/* media screen */
+
+@media screen and (max-width: 767px) {
+  .container1 {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .container li a{
+    font-size: small;
+  }
+  .container1 .details .objective{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .container1 .details .objective span{
+    font-size: 25px;
+  }
+  .container1 .details button{
+    width: 100%;
+  }
+}
+
+
+
+
 .nav {
     background-color: #33333383;
     opacity: 100%;
@@ -129,7 +155,6 @@ body {
     background-color: #f3db06;
     box-shadow: 1px 1px 20px 14px yellow;
 }
-
 
 
 
