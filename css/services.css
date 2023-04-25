@@ -9,6 +9,56 @@ body{
     /* we need to tack step back from file css to file img so we need add ../ */
     background-image: url(../img/218148449.jpg);
 }
+
+
+@media screen and (max-width: 767px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container .image img{
+        width: -webkit-fill-available !important;
+    } 
+    .container .image{
+        transform: translate(50%, 50%) !important;
+        left: -50%;
+        top: -50%;
+        height: fit-content  !important;
+    }
+    .container .percentage-circle{
+        position: absolute;
+        left: 4%;
+        top: 566%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+    }
+    .container .percentage-circle .csscontainer{
+        transform: translate(83px, 225px);
+    }
+    .container .percentage-circle .htmlcontainer{
+        transform: translate(80px, 46px);
+    }
+    .container .percentage-circle .jscontainer{
+        transform: translate(83px, 400px);
+    }
+    .container .percentage-circle .phpcontainer{
+        transform: translate(83px, 387px);
+    }
+    .container .percentage-circle .reactcontainer{
+        transform: translate(83px, 566px);
+    }
+    .container .percentage-circle .mysqlcontainer{
+            transform: translate(83px, 750px);
+    }
+    .gohome{
+        transform: translate(-5%, 2870%) !important;
+        padding-bottom: 9px;
+    }
+}
+
+
 .container{
     padding-top: 20px;
     position: relative;
