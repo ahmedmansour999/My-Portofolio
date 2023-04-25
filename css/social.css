@@ -17,13 +17,16 @@ body{
     flex-direction: column;
     align-items: center;
     }
+    .social-container .proto-logo{
+        display: none;
+    }
     .social-container .main{
         transform: translate(-50%, 110%);
         position: relative;
-        left: 50%;
+        left: 32%;
     }
     .social-container .gohome{
-        transform: translate(106%, 666%);
+        transform: translate(37%, 666%);
     }
 }
 
